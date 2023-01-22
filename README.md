@@ -1,81 +1,102 @@
-# Eth_Voting #
-A blockchain-based E-voting system, created as the Third year project of Keshav Memorial Institute of Technology. Teammates include me, Mallesh , Piyush , Nikhil , Arun.
 
-## What is Ethereum Blockchain?
+# E-Voting using Blockchain
 
-There are several blockchain platforms that allow developers to create and execute smart contracts. Ethereum (@ https://ethereum.org/) is a global, open-source platform for decentralized applications (dapps). Launched in 2015, Ethereum is among the leading programmable blockchains that you can use it to build new blockchain applications, such as cryptocurrency wallets, financial applications, decentralized markets, and games. Like other blockchains, Ethereum has a native cryptocurrency called Ether (ETH), similar to Bitcoin.
-
-Ethereum consists of:
-
-Ethereum Virtual Machine (EVM): essentially a state machine that allows you to execute codes.
-
-Solidity: a programming language build on top of the EVM for writing smart contracts, to send and receive digital tokens and store states.
-
-Gas: On the Ethereum blockchain, each smart contract is processed by one miner and the resultant block is added to the blockchain. Miners must be rewarded for their efforts, so executing any smart contract on the EVM requires a payment called gas. You need to specify the amount of gas you want to spend for executing any smart contract you create.
-
-## Tech Stack:
-
-* Solidity/Web3 (for writing/connecting the Blockchain contract)
-
-* React.js & Bootstrap (front-end)
-
-* MongoDB/ExpressJS/Node.js (back-end)
-
-# Node.js
-
-Node.js is a JavaScript runtime environment that executes JavaScript code outside of a browser. It is open-source and cross platform.
-
-npm (originally short for Node Package Manager) is a package manager for the JavaScript and node.js. It consists of a command-line client, also called npm, and a registry of packages.
-
-To install node.js and npm: Goto node.js download site @ https://nodejs.org/en/download/ ⇒ choose "LTS" (Long-Term Support).
+A simple E-voting Decentralised Web Application using the Ethereum Blockchain, Solidity and the MERN(MongoDB, Express.js, ReactJS, Node.js) stack
 
 
-## Build Set-up ##
+## Abstract:
 
-```
-# install dependencies
-npm install
+Online voting is a trend that is gaining momentum and trend in modern society. It has great potential to decrease organisational costs and increase voter turnout. It eliminates the need to print ballot papers or open polling stations—voters can vote from wherever there is an Internet connection. Despite these benefits, online voting solutions are viewed with a great deal of caution because they introduce new threats. A single vulnerability can lead to large-scale manipulations of votes. Electronic voting systems must be legitimate, accurate, safe, and convenient when used for elections. The main goal of this analysis was to examine the current status of blockchain-based voting research and online voting systems and any related difficulties to predict future developments. This study provides a conceptual description of the intended blockchain-based electronic voting application and an introduction to the fundamental structure and characteristics of the blockchain in connection to electronic voting. As a consequence of this study, it was discovered that blockchain systems may help solve some of the issues that now plague election systems. On the other hand, the most often mentioned issues in blockchain applications are privacy protection and transaction speed. For a sustainable blockchain-based electronic voting system, the security of remote participation must be viable, and for scalability, transaction speed must be addressed.
+## Key features :
 
-# serve with hot reload at localhost:3000
-npm start
+❖ High Availability
 
-```
+❖ Verifiability
 
-# Truffle Suite
+❖ Transparency
 
-The Truffle Suite allows us to build decentralized applications (dapps) on the Ethereum blockchain. It provides a suite of tools for us to write smart contracts with the solidity language, test the smart contracts and deploy them to the blockchain.
+❖ Immutability
 
-You can install Truffle with npm as follows. Global option is used so that it can be used in many projects.
+❖ Distributed Ledgers
 
-```
-npm install --global truffle
-```
-Truffle module is installed under "node_modules" sub-directory of node.js installed directory. The executable "truffle.cmd" can be found at the node.js base directory.
+❖ Decentralised
 
-Truffle comes with a set of commands, the commonly-used commands are listed below via "truffle help":
+❖ Enhanced Security
+## Ethereum
 
-```
-truffle help
-Truffle v5.1.15 - a development framework for Ethereum
-Usage: truffle <command> [options]
-compile   Compile contract source files
-console   Run a console with contract abstractions and commands available
-migrate   Run migrations to deploy contracts
-test      Run JavaScript and Solidity tests
-unbox     Download a Truffle Box, a pre-built Truffle project
-version   Show version number and exit
-```
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png" height="150px" width="100px"/>
 
-# Ganache
-Ganache is a local in-memory personal blockchain, which you can use to run tests, execute commands, and inspect state while controlling how the chain operates.
+For developing E-voting using Blockchain I used Ethereum - a popular platform for
+creating distributed Blockchain applications that support smart contracts. Ether (ETH) is the native cryptocurrency of the platform
 
-To install Ganache: Goto Truffle-Ganache @ https://www.trufflesuite.com/ganache ⇒ Download.
+## Smart Contract
 
-Ganache provides 10 accounts preloaded with 100 fake Ether (ETH). Each account has a unique address and a private key.
+<img src="https://media.istockphoto.com/id/981755738/vector/smart-contract-audit-or-smart-contract-review-icon-main-electronic-blockchain-ico-document.jpg?s=170667a&w=0&k=20&c=o-fcpTigbkbFTw_Souc5R7MHe8rqABmi2k_aSxaQqvI=" height="150px" width="100px"/>
 
-# MetaMask Wallet 
-MetaMask is a crypto wallet and gateway to blockchain dapps. It is available as a browser extension (for Chrome and Firefox) and as a mobile app. It equips you with a key vault, secure login and token wallet - everything you need to manage your digital assets.
+Smart contracts are self-executing contracts which contain the terms and conditions of
+agreement between peers
 
-(For Firefox) Select "Settings" ⇒ "Add-ons" ⇒ Search for "MetaMask" ⇒ Select "Meta<ask (Ethereum Browser Extension)" ⇒ "Add to Firefox" ⇒ You will see a "Fox" icon appears on the top-right of navigation bar.
-(For Chrome) Goto "Settings" ⇒ "Extensions" ⇒ "Open Chrome Web Store" ⇒ Search for "MetaMask" ⇒ "Add to Chrome" ⇒ You will see a "Fox" icon appears on the top-right of navigation bar.
-Other alternative wallets are: EtherWallet...
+They are simply programs stored on a blockchain that run when predetermined conditions are met
+
+They typically are used to automate the execution of an agreement so that all participants can be immediately certain of the outcome, without any intermediary's involvement or time loss
+
+## Solidity
+
+<img src="https://styles.redditmedia.com/t5_37k24/styles/communityIcon_1etv9auttp181.png" height="150px" width="100px"/>
+
+Solidity is a contract-oriented, high-level language for implementing smart contracts. It is
+statically typed, supports inheritance, libraries and complex user-defined types among
+other features
+
+## Metamask
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png" height="150px" width="100px"/>
+
+
+For performing any transaction on the blockchain we require an account which will have unique account address. This can be created by using the Metamask chrome extension
+
+Metamask is a crypto wallet & gateway to blockchain apps. It generates passwords (in the
+form of mnemonic )and keys on your device, so only you have access to your accounts and data. It helps users in interacting with the blockchain
+
+## Ganache
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3VgNhP1A0wkrHPmYn6RWokpJTIMqQLOcv8JDS1L8Y-ojRWey6F57g9Bn1FmFnziE_doQ&usqp=CAU" height="150px" width="100px"/>
+
+Since working with the main ethereum network costs actual money for transactions, we are using a local RPC “Ganache”.
+
+Ganache is a local test network for rapid Ethereum and distributed application development.
+
+It can be used across the entire development cycle; enabling us to develop, deploy, and test our dApps in a safe and deterministic environment.
+
+It provides us 10 accounts each having 100 ethers for testing purpose.
+
+<img src="https://trufflesuite.com/img/ganache-window.png" height="300px" width="1000px"/>
+.
+
+ganache preview 
+## Web3
+
+Web3. js is a collection of libraries that allow developers to interact with a remote or local Ethereum node using HTTP, IPC, or WebSocket. Using this library, you can develop websites or clients that interact with the blockchain.
+
+
+## Truffle
+
+<img src="https://trufflesuite.com/assets/logo.png" height="150px" width="100px"/>
+
+Now to interact with our compiled smart contract in a hassle-free manner we use
+Truffle suite.
+
+Truffle is the most popular development framework for ethereum which makes
+lots of work easier.
+
+This generates an artifacts which plays an important role in the successful
+deployment of our application.
+
+It takes care of managing our contract artifacts so we don’t have to include support
+for custom deployments, library linking etc.
+
+## 🔗 Links
+
+Demo Video + PPt + Documentation
+
+https://drive.google.com/drive/folders/1mVz0BPsqseCF8b2YY31EnAUMK-VFij6E
