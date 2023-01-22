@@ -1,0 +1,5 @@
+#node modules
+/server/node_modules
+
+/voting/node_modules
+/voting/build

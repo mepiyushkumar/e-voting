@@ -1,0 +1,16 @@
+.myback{
+    background: linear-gradient(to bottom right, #33ff66 0%, #ffff66 100%) ;
+    height: 100%;
+    background-attachment: fixed; 
+
+
+}
+
+.myback2{
+    background:#495C70
+}
+
+.myback_warning{
+    background:linear-gradient(to top right, #ff9900 0%, #ffff00 75%);
+}
+
